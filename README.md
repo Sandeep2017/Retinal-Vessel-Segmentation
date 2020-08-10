@@ -39,4 +39,5 @@ Original Image             |  Mask Image               |        AV Mask
 
 
 ### Network Architecture
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Retina1.png)
 
