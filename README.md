@@ -30,9 +30,9 @@ The [DRIVE dataset](https://drive.grand-challenge.org/) is used here for trainin
 The dataset consists of 40 expert annotated retinal fundas images divided equally into a training and test set of 20 image each. Each image was captured using 8 bits per color plane at 768 by 584 pixels. The FOV of each image is circular with a diameter of approximately 540 pixels. For this dataset, the images have been cropped around the FOV. For each image, a mask image is provided that delineates the FOV. 
 A sample fundas image along with its hand annotated mask is provided below.
 
-Original Image             |  Mask Image
-:-------------------------:|:-------------------------:
-![](images/README/dataset_example.png)  |  ![](images/README/dataset_example_mask.png)
+Original Image             |  Mask Image               |  AV Mask
+:-------------------------:|:-------------------------:|:-------------------------
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/29-training.png)  |  ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/29_training.png)  |  ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/29_training%20(2).png)
 
 #### Image Augmentation
 
