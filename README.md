@@ -62,6 +62,8 @@ Augmented Training Masks
 :-------------------------:|
 ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/y.PNG)|
 
+[Back to top](#Retinal-Vessel-Segmentation)
+
 ### Network Architecture:
 * The proposed architecture shown in Fig. 1, below is inspired from the original U-Net architecure with major modifications. It is a 4 stage segmentation architecture based upon the concept of stacking. In this 4 stage architecture, the feature map from the penultimate layer of the first stage is passed on to the second stage as the penultimate layer contains more information than the last output layer. The passed on feature map is then concatenated with the original input shape (shown in bold black arrows) and is fed as an input to the second stage. Concatenating the original shape image with the previous feature map improves the refinement of the predictions. Similarly, the feature map from the penultimate layer of the second stage is passed on the third stage and concatenated with the original input image as so on until the fourth stage. The final predictions are obtained from the output of the fourth stage.
 
@@ -79,6 +81,8 @@ Fig. 1 Network architecture | Fig. 2 Subpixel Convolutional layer
 Fig. 3 Encoder Block
 :-------------------------:|
 ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Encoder1.png)
+
+[Back to top](#Retinal-Vessel-Segmentation)
 
 ### Loss Function and Optimizer:
 
@@ -99,6 +103,8 @@ Adam optimizer was used with default parameters
 * RAM: 12GB DDR4
 
 The network was trained using the above mentioned setup for 40 epochs with a batch size of ```10``` and input image size ```256 x 256 x 3```. Total time taken for training is 1.5 hours
+
+[Back to top](#Retinal-Vessel-Segmentation)
 
 ### Evaluation Metric:
 F1-score was used for evaluation as it takes into account the class imbalance, because the number of vessel pixels greatly outnumbers the non-vessel pixels.
@@ -130,6 +136,7 @@ Pretrained MobileNetV2 encoded U-Net| | | |
 Pretrained ResNet encoded U-Net| | | |
 **Proposed Method**|**87.5**|**94.7**|**77.2**|**--**|
 
+[Back to top](#Retinal-Vessel-Segmentation)
 
 
 
