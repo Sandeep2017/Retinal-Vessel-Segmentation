@@ -79,5 +79,21 @@ Fig. 3 Encoder Block
 :-------------------------:|
 ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Encoder1.png)
 
+### Loss Function & Optimizer
+
+#### Loss Function
+Pixel-wise Binary Cross-entropy is a widely used loss function for semantic segmentation since it evaluates the class predictions for each pixel individually, but it suffers from class imbalance, so we have used another loss function along with BCE loss, named Dice loss which has a normalizing effect and is not affected by class imbalance. 
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;BCELoss={-[ylogp+(1-y)log(1-p)]}"  />
+
+
+Dice Loss = 2 ×| A ∩ B |/| A ∪ B |
+
+
+
+
+
+#### Optimizer
+
 
 
