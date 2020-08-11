@@ -99,6 +99,38 @@ Adam optimizer was used with default parameters
 
 The network was trained using the above mentioned setup for 40 epochs with a batch size of ```10``` and input image size ```256 x 256 x 3```. Total time taken for training is 1.5 hours
 
+### Evaluation Metric
+F1-score was used for evaluation as it takes into account the class imbalance, because the number of vessel pixels greatly outnumbers the non-vessel pixels.
+It is the harmonic mean of precision and recall.
+
+<img src="https://latex.codecogs.com/svg.latex?\Large&space;F1-Score={2*(Precision*Recall)/(Precision+Recall)}"  />
+
+The table below compares the F1-score, AUC and the IoU of all the stages.
+
+Stage|F1-Score | AUC | IoU | Dice coef.|
+---|--- | --- | --- | --- |
+Stage 1|84.0 | 90.0 | 74.0 | -- | 
+Stage 2|85.5 | 91.7 | 74.2 | -- | 
+Stage 3|86.3 | 92.0 | 75.6 | -- | 
+**Stage 4**|**87.5** | **94.7** | **77.2** | **--** |
+--|-- | -- | -- | -- |
+Average|87.8 | 92.1 | 75.2 | -- |
+
+The table below compares our method with existing methods.
+
+Model|F1-Score | AUC | IoU | Dice coef.|
+---|--- | --- | --- | --- |
+U-Net| | | |
+U-Net++| | | |
+Wide U-Net| | | |
+Residual U-Net| | | |
+Pretrained VGG encoded U-Net| | | |
+Pretrained MobileNetV2 encoded U-Net| | | |
+Pretrained ResNet encoded U-Net| | | |
+**Proposed Method**|**87.5**|**94.7**|**77.2**|**--**|
+
+
+
 
 
 ### Results
