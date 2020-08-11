@@ -92,6 +92,15 @@ Dice Loss = 2 ×| A ∩ B |/| A ∪ B |
 #### Optimizer
 Adam optimizer was used with default parameters
 
+### Training setup 
+* GPU: Nvidia P100 16GB
+* CPU: Intel Xeon
+* RAM: 12GB DDR4
+
+The network was trained using the above mentioned setup for 40 epochs with a batch size of ```10``` and input image size ```256 x 256 x 3```. Total time taken for training is 1.5 hours
+
+
+
 ### Results
 The predicted masks from each stage are shown below along with their respective ground truth masks and the original fundus images. 
 Notice that the predictions from stage 4 are the best.
