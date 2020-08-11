@@ -34,7 +34,7 @@ Original Image             |  Mask Image               |        AV Mask
 :-------------------------:|:-------------------------:|:-------------------------:|
 ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/29-training.png)  |  ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/29_training.png)   |   ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/29_training%20(2).png)
 
-#### Augmentation & Preprocessing
+### Augmentation & Preprocessing
 
 The training data was augmented on the fly using the [Albumentations library](https://albumentations.ai/).
 A strong combination of different types of image augmentations were applied with varied probabilities. They were:
@@ -51,6 +51,8 @@ A strong combination of different types of image augmentations were applied with
 
 Along with the above mentioned augmentations, every image in the training and testing sets underwent a Histogram Equalization preprocessing step, i.e, CLAHE (Contrast Limited Adaptive Histogram Equalization).
 
+Some examples of augmented images and masks are given below.
+
 Augmented Training Images
 :-------------------------:|
 ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/x.PNG)
@@ -59,9 +61,16 @@ Augmented Training Masks
 :-------------------------:|
 ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/y.PNG)|
 
-
-
-
 ### Network Architecture
+* The proposed architecture shown in Fig. 1, below is inspired from the original U-Net architecure with major modifications. It is a 4 stage segmentation architecture based upon the concept of stacking. In this 4 stage architecture, the feature map from the penultimate layer of the first stage is passed on to the second stage as the penultimate layer contains more information than the last output layer. The passed on feature map is then concatenated with the original input shape (shown in bold black arrows) and is fed as an input to the second stage. Concatenating the original shape image with the previous feature map improves the refinement of the predictions. Similarly, the feature map from the penultimate layer of the second stage is passed on the third stage and concatenated with the original input image as so on until the fourth stage. The final predictions are obtained from the output of the fourth stage.
+
+* Here the learnable transposed convolution method or the interpolation based up-sampling method is replaced by the efficient [subpixel convolutions](xxxxx).
+A subpixel convolutional layer is shown in Fig. 2, which is just a standard 1x1 convolution layer followed by a pixel shuffling operation which re-arranges the pixels from the depth dimensions to the spatial dimensions. This type pf convolutions minimize information loss during up-sampling of the image in the decoder network.
+
+* Each stage has its own output layer and the loss is minimized at each stage. The architecture is trained using deep supervision.
+
+* The parallel layers of the four decoder networks are connected via dense connections which helps in improving the spatial knowledge transfer through each stage of the model while training.
+
+
 ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Retina1.png)
 
