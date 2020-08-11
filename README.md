@@ -8,12 +8,13 @@ A subpixel dense and deeply supervised U-Net like architecture for segmenting re
 ## Overview
 * [Contributors](#Contributors)
 * [Introduction](#Introduction)
-* [Dataset Used](#Dataset-And-Preprocessing)
-* [Model Architecture](#Network-Architecture)
+* [Dataset Used](#Dataset Used)
+* [Augmentation & Preprocessing](#Augmentation & Preprocessing)
+* [Network Architecture](#Network-Architecture)
 * [Loss Function & Optimizer](#Loss-Function-And-Optimizer)
-* [Learning Rate](#Learning-Rate)
-* [Result](#Result)
-* [Citations](#Citations)
+* [Training setup](#Training setup)
+* [Evaluation Metric](#Evaluation Metric)
+* [Results](#Results)
 
 ### Contributors:
 This project is created by the joint efforts of
