@@ -38,11 +38,11 @@ Original Image             |  Mask Image               |        AV Mask
 
 Augmented Training Images
 :-------------------------:
-![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/x.PNG) 
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/x.PNG)|
 
 Augmented Training Masks
-
-![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/y.PNG)
+:-------------------------:
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/y.PNG)|
 
 
 
