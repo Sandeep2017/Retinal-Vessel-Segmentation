@@ -73,7 +73,7 @@ A subpixel convolutional layer is shown in Fig. 2, which is just a standard 1x1 
 
 Fig. 1 Network architecture | Fig.2 Subpixel Convolutional layer
 :-------------------------:|:-------------------------:|
-![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Retina1.png) | ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/subpixel1.png)
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Retina1.png) | ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/subpixel2.png)
 
 
 
