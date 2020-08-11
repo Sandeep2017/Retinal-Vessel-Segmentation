@@ -71,9 +71,13 @@ A subpixel convolutional layer is shown in Fig. 2, which is just a standard 1x1 
 
 * The parallel layers of the four decoder networks are connected via dense connections which helps in improving the spatial knowledge transfer through each stage of the model while training.
 
-Fig. 1 Network architecture | Fig.2 Subpixel Convolutional layer
+Fig. 1 Network architecture | Fig. 2 Subpixel Convolutional layer
 :-------------------------:|:-------------------------:|
 ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Retina1.png) | ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/subpixel2.png)
+
+Fig. 3 Encoder Block
+:---------------------------------:|
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Encoder1.png) |
 
 
 
