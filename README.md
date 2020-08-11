@@ -9,9 +9,9 @@ A subpixel dense and deeply supervised U-Net like architecture for segmenting re
 * [Contributors](#Contributors)
 * [Introduction](#Introduction)
 * [Dataset Used](#Dataset-Used)
-* [Augmentation & Preprocessing](#Augmentation-&-Preprocessing)
+* [Augmentation & Preprocessing](#Augmentation-and-Preprocessing)
 * [Network Architecture](#Network-Architecture)
-* [Loss Function & Optimizer](#Loss-Function-And-Optimizer)
+* [Loss Function & Optimizer](#Loss-Function-and-Optimizer)
 * [Training setup](#Training-setup)
 * [Evaluation Metric](#Evaluation-Metric)
 * [Results](#Results)
@@ -35,7 +35,7 @@ Original Image             |  Mask Image               |        AV Mask
 :-------------------------:|:-------------------------:|:-------------------------:|
 ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/29-training.png)  |  ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/29_training.png)   |   ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/29_training%20(2).png)
 
-### Augmentation & Preprocessing:
+### Augmentation and Preprocessing:
 
 The training data was augmented on the fly using the [Albumentations library](https://albumentations.ai/).
 A strong combination of different types of image augmentations were applied with varied probabilities. They were:
@@ -80,7 +80,7 @@ Fig. 3 Encoder Block
 :-------------------------:|
 ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Encoder1.png)
 
-### Loss Function & Optimizer:
+### Loss Function and Optimizer:
 
 #### Loss Function
 Pixel-wise Binary Cross-entropy is a widely used loss function for semantic segmentation since it evaluates the class predictions for each pixel individually, but it suffers from class imbalance, so we have used another loss function along with BCE loss, named Dice loss which has a normalizing effect and is not affected by class imbalance. 
