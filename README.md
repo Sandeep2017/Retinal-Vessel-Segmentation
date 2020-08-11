@@ -89,11 +89,37 @@ Pixel-wise Binary Cross-entropy is a widely used loss function for semantic segm
 
 Dice Loss = 2 ×| A ∩ B |/| A ∪ B |
 
-
-
-
-
 #### Optimizer
+Adam optimizer was used with default parameters
+
+### Results
+The predicted masks from each stage are shown below along with their respective ground truth masks and the original fundus images. 
+Notice that the predictions from stage 4 are the best.
+Original Fundus images
+:-------------------------:|
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Results/original.PNG)
+
+Original Ground truth masks
+:-------------------------:|
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Results/original%20mask.PNG)
+
+Stage 1 Predictions
+:-------------------------:|
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Results/only%201.PNG)
+
+Stage 2 predictions
+:-------------------------:|
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Results/on%3By%202.PNG)
+
+Stage 3 predictions
+:-------------------------:|
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Results/only%203.PNG)
+
+Stage 4 predictions
+:-------------------------:|
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/Results/Average.PNG)
+
+
 
 
 
