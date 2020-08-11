@@ -35,7 +35,12 @@ Original Image             |  Mask Image               |        AV Mask
 ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/29-training.png)  |  ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/29_training.png)   |   ![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/29_training%20(2).png)
 
 #### Image Augmentation
-![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/x.PNG)
+Augmented Training Images
+:-------------------------:
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/x.PNG) |
+Augmented Training Masks
+:-------------------------:
+![](https://github.com/Sandeep2017/Retinal-Vessel-Segmentation/blob/master/img/y.PNG)
 
 
 ### Network Architecture
