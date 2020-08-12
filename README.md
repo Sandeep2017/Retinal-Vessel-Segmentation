@@ -39,16 +39,16 @@ Original Image             |  Mask Image               |        AV Mask
 
 The training data was augmented on the fly using the [Albumentations library](https://albumentations.ai/).
 A strong combination of different types of image augmentations were applied with varied probabilities. They were:
-* Random Flips
-* Transpose
-* Scale, Shift & rotate
-* Random Rotations
-* Optical Distortion
-* Grid Distortion
-* Elastic Transform
-* RGB Shift
-* Random Gamma
-* Random Brightness & contrast
+* Random Flips.
+* Transpose.
+* Scale, Shift & rotate.
+* Random Rotations.
+* Optical Distortion.
+* Grid Distortion.
+* Elastic Transform.
+* RGB Shift.
+* Random Gamma.
+* Random Brightness & contrast.
 
 Along with the above mentioned augmentations, every image in the training and testing sets underwent a Histogram Equalization preprocessing step, i.e, CLAHE (Contrast Limited Adaptive Histogram Equalization).
 
