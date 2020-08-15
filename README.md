@@ -2,6 +2,8 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+
 
 A subpixel dense and deeply supervised U-Net like architecture for segmenting retinal vessels.
 
