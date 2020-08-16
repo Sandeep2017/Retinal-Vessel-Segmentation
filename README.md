@@ -22,7 +22,6 @@ A subpixel dense and deeply supervised U-Net like architecture for segmenting re
 This project is created by the joint efforts of
 * [Subham Singh](https://github.com/Subham2901)
 * [Sandeep Ghosh](https://github.com/Sandeep2017)
-* [Amit Maity](https://github.com/Neel1097)
 
 ### Introduction:
 Automatic extraction of retinal vessels from retinal fundas images is a long researched area in AI aided medical diagnosis as it assists in the implementation of screening programs for diabetic retinopathy, to establish a relationship between vessel tortuosity and hypertensive retinopathy, vesssel diameter measurement in relation with diagnosis of hypertension, and computer assisted laser surgery. Also, the retinal vascular tree is found to be unique for each individual and can be used for biometric identification. 
