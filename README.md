@@ -3,6 +3,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://linkedin.com/in/sandeep-ghosh)
+[![HitCount](http://hits.dwyl.com/Sandeep2017/Retinal-Vessel-Segmentation.svg)](http://hits.dwyl.com/Sandeep2017/Retinal-Vessel-Segmentation)
 
 
 A subpixel dense and deeply supervised U-Net like architecture for segmenting retinal vessels.
